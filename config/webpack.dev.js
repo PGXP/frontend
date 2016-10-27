@@ -9,11 +9,7 @@ module.exports = {
      * 
      */ 
     'endpoints' : {
-        //'auth' : 'http://supsd.cta.serpro/auth/',
-        'auth': 'http://supsd.cta.serpro/livraria/',
-        'produto' : 'http://supsd.cta.serpro/produto/',
-        'usuario' : 'http://supsd.cta.serpro/usuario/',
-        'venda' : 'http://supsd.cta.serpro/venda/'
+        'auth': 'https://cep-fwkdemoiselle.rhcloud.com/'
     } 
 
 }
