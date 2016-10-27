@@ -1,4 +1,4 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed, inject } from '@angular/core/testing';
 import { provideRoutes } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 
@@ -18,10 +18,8 @@ describe('App', () => {
     });
   });
 
-  it('should have boolean property isBs3', () => {
-    let fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    expect(fixture.debugElement.componentInstance.isBs3).toMatch(/true|false/);
-  });
+  it('should some test', inject([ApiService], (api) => {
+    expect('example').toBe('example');
+  }));
 
 });

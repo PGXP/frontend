@@ -35,12 +35,12 @@ export class HttpService extends Http {
     }
 
     /**
-     * Append endpoint url according to class attribute endpoints
+     * Append endpoint url according to endpoints configuration
      * Rules:
      * 
      * Url 'http://someurl'             => Url is not changed
      * Url '~endpoint1/api/resource'    => endpoint1's url concatenated with 'api/resource'
-     * Url 'api/resource'               => Request is made to local server 
+     * Url 'api/resource'               => first endpoint url concatenated with 'api/resource' (ideal for single endpoint config)
      */
     private appendEndpoint(url: string) : string {
         if (!(url.lastIndexOf('http', 0) === 0)) { // startsWith in ES5
