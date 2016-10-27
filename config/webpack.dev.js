@@ -1,5 +1,5 @@
 module.exports = {
-    
+
     /**
      * Must contain at least one endpoint
      * Example:
@@ -7,9 +7,9 @@ module.exports = {
      *      'main' : 'http://localhost/app'
      * }
      * 
-     */ 
-    'endpoints' : {
+     */
+    'endpoints': {
         'auth': 'https://cep-fwkdemoiselle.rhcloud.com/'
-    } 
+    }
 
 }
