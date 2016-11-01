@@ -16,7 +16,8 @@ import { TopNavComponent } from './layout/top-nav/top-nav.component';
 
 // feature modules
 import { LoginComponent } from './modules/login';
-import {AboutModule} from './modules/about/about.module';
+import { AboutModule } from './modules/about/about.module';
+import { CepModule } from './modules/cep/cep.module';
 import { HomeModule } from './modules/home/home.module';
 
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
@@ -36,6 +37,7 @@ import {DmlHttpModule, HttpService, HttpServiceProvider} from './core/http';
     routing,
 
     AboutModule,
+    CepModule,
     HomeModule,
     SecurityModule,
     DmlHttpModule

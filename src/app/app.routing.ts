@@ -1,6 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './modules/home/home.component';
+import { CepComponent } from './modules/cep/cep.component';
 import { AboutComponent } from './modules/about/about.component';
 import { LoginComponent } from './modules/login/login.component';
 
@@ -24,6 +25,11 @@ export const routes: Routes = [
     path: 'login', 
     data: ['Login'],
     component: LoginComponent
+  },
+  { 
+    path: 'cep', 
+    data: ['Cep'],
+    component: CepComponent
   }
 ];
 
